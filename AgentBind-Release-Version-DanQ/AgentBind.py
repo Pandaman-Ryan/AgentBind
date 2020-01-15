@@ -1,9 +1,6 @@
 '''
     -> AgentBind <-
     
-    Last Edit: July 2nd, 2018
-
-    Parameters:
 '''
 
 from optparse import OptionParser
@@ -21,19 +18,15 @@ def main():
     ############
     usage = "usage: %prog [options]"
     parser = OptionParser(usage)
-    parser.add_option('--motif', dest='f_core_motif',
-            default="/home/danq-unfixed/danq-unfixed/storage/AgentBind-GM12878-DanQ/data/table_matrix/table_core_motifs.txt",
+    parser.add_option('--motif', dest='f_core_motif', default="",
             help='The file address where you save your motifs of interst [Default: %default]')
     parser.add_option('--scope', dest='len_seq', default=1000, type='int',
             help='The scope of contexts to be examined for each core motif [Default: %default]')
-    parser.add_option('--workdir', dest='dir_work',
-            default='/home/danq-unfixed/danq-unfixed/storage/AgentBind-GM12878-DanQ/tmp/',
+    parser.add_option('--workdir', dest='dir_work', default='',
             help='The directory where all temporary and final results are saved [Default: %default]')
-    parser.add_option('--datadir', dest='dir_data',
-            default='/home/danq-unfixed/danq-unfixed/storage/AgentBind-GM12878-DanQ/data/',
+    parser.add_option('--datadir', dest='dir_data', default='',
             help='The directory where all input and dependent data are stored [Default: %default]')
-    parser.add_option('--resultdir', dest='dir_result',
-            default='/home/danq-unfixed/danq-unfixed/storage/AgentBind-GM12878-DanQ/results/',
+    parser.add_option('--resultdir', dest='dir_result', default='',
             help='The directory where all input and dependent data are stored [Default: %default]')
     (options, args) = parser.parse_args()
 
@@ -76,7 +69,6 @@ def main():
         os.makedirs(dir_fimo_out)
 
     # comment the following till the final code release
-    '''
     for f_fimo in os.listdir(dir_fimo_out):
         os.remove(os.path.join(dir_fimo_out, f_fimo))
 
@@ -93,7 +85,6 @@ def main():
     processes = [subprocess.Popen(cmd, shell=True) for cmd in cmd_list]
     for p in processes:
         p.wait()
-    '''
 
     ######
     for (TF_name, TF_ID, TF_chipseq) in TF_list:
@@ -170,16 +161,6 @@ def main():
                             dir_figure, f_weight)
             subprocess.check_call(compute_weight_cmd, shell=True)
 
-            #######
-            # Step 6: find_relevant_TF.py
-            #f_neg_coord = "%s/vis-weights-total/coordinates_neg.txt" %(dir_seqs)
-            #analysis_cmd = "python ./data_analysis/data_analysis.py "\
-            #        " --datadir %s --fweight %s --negcoord %s "\
-            #        " --fimodir %s --resultdir %s "\
-            #        " --TFname %s --motif %s " %(options.dir_data, f_weight, f_neg_coord,
-            #                dir_fimo_out, dir_result_with_suffix, TF_name, options.f_core_motif)
-            #subprocess.check_call(analysis_cmd, shell=True)
-            
         end_time = time.time()
         print ("Analysis of %s used %f seconds" %(TF_name, end_time-start_time))
         start_time = end_time
