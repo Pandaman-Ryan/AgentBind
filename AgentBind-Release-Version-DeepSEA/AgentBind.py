@@ -1,9 +1,6 @@
 '''
     -> AgentBind <-
     
-    Last Edit: July 2nd, 2018
-
-    Parameters:
 '''
 
 from optparse import OptionParser
@@ -21,19 +18,15 @@ def main():
     ############
     usage = "usage: %prog [options]"
     parser = OptionParser(usage)
-    parser.add_option('--motif', dest='f_core_motif',
-            default="/home/deepsea-unfixed/project-deepsea-unfixed/storage/AgentBind-GM12878-DeepSEA/data/table_matrix/table_core_motifs.txt",
+    parser.add_option('--motif', dest='f_core_motif', default="",
             help='The file address where you save your motifs of interst [Default: %default]')
     parser.add_option('--scope', dest='len_seq', default=1000, type='int',
             help='The scope of contexts to be examined for each core motif [Default: %default]')
-    parser.add_option('--workdir', dest='dir_work',
-            default='/home/deepsea-unfixed/project-deepsea-unfixed/storage/AgentBind-GM12878-DeepSEA/tmp/',
+    parser.add_option('--workdir', dest='dir_work', default='',
             help='The directory where all temporary and final results are saved [Default: %default]')
-    parser.add_option('--datadir', dest='dir_data',
-            default='/home/deepsea-unfixed/project-deepsea-unfixed/storage/AgentBind-GM12878-DeepSEA/data/',
+    parser.add_option('--datadir', dest='dir_data', default='',
             help='The directory where all input and dependent data are stored [Default: %default]')
-    parser.add_option('--resultdir', dest='dir_result',
-            default='/home/deepsea-unfixed/project-deepsea-unfixed/storage/AgentBind-GM12878-DeepSEA/results/',
+    parser.add_option('--resultdir', dest='dir_result', default='',
             help='The directory where all input and dependent data are stored [Default: %default]')
     (options, args) = parser.parse_args()
 
