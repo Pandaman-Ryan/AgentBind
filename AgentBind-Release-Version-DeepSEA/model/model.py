@@ -1,7 +1,5 @@
 '''
-    --> Agent Bind <--
-    Updated by: An Zheng
-    Updated on: July 15th, 2018
+    Agent Bind DeepSEA model
 '''
 
 from __future__ import absolute_import

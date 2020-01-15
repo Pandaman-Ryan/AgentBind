@@ -8,10 +8,6 @@ import os
 import subprocess
 import time
 
-#######
-# f_core_motifs is the file address
-# where you
-
 def main():
     ############
     # user-defined options
@@ -70,7 +66,6 @@ def main():
         os.makedirs(dir_fimo_out)
 
     # comment the following till the final code release
-    '''
     for f_fimo in os.listdir(dir_fimo_out):
         os.remove(os.path.join(dir_fimo_out, f_fimo))
 
@@ -87,7 +82,6 @@ def main():
     processes = [subprocess.Popen(cmd, shell=True) for cmd in cmd_list]
     for p in processes:
         p.wait()
-    '''
 
     ######
     for (TF_name, TF_ID, TF_chipseq) in TF_list:
@@ -164,16 +158,6 @@ def main():
                             dir_figure, f_weight)
             subprocess.check_call(compute_weight_cmd, shell=True)
 
-            #######
-            # Step 6: find_relevant_TF.py
-            #f_neg_coord = "%s/vis-weights-total/coordinates_neg.txt" %(dir_seqs)
-            #analysis_cmd = "python ./data_analysis/data_analysis.py "\
-            #        " --datadir %s --fweight %s --negcoord %s "\
-            #        " --fimodir %s --resultdir %s "\
-            #        " --TFname %s --motif %s " %(options.dir_data, f_weight, f_neg_coord,
-            #                dir_fimo_out, dir_result_with_suffix, TF_name, options.f_core_motif)
-            #subprocess.check_call(analysis_cmd, shell=True)
-            
         end_time = time.time()
         print ("Analysis of %s used %f seconds" %(TF_name, end_time-start_time))
         start_time = end_time
@@ -181,7 +165,6 @@ def main():
         #################
 
     # write AUC summary
-    #TODO: save AUC, res_stat, data_size into diffrent files
     AUC_dict = {}
     for suffix in ['b', 'c']:
         summary_path = "%s/%s/auc_summary.txt" %(options.dir_result, suffix)

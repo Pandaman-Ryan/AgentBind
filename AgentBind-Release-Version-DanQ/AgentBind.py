@@ -8,10 +8,6 @@ import os
 import subprocess
 import time
 
-#######
-# f_core_motifs is the file address
-# where you
-
 def main():
     ############
     # user-defined options
@@ -146,7 +142,6 @@ def main():
                             dir_test_data, dir_test_checkpoint,
                             size_test_data, dir_result_with_suffix, options.len_seq)
             subprocess.check_call(test_cmd, shell=True)
-
             
             #######
             # Step 5: Compute weights
@@ -168,7 +163,6 @@ def main():
         #################
 
     # write AUC summary
-    #TODO: save AUC, res_stat, data_size into diffrent files
     AUC_dict = {}
     for suffix in ['b', 'c']:
         summary_path = "%s/%s/auc_summary.txt" %(options.dir_result, suffix)

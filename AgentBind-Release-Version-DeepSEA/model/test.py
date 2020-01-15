@@ -1,8 +1,5 @@
 # Evaluation
 # 
-# Start Date: Apr. 16th, 2017
-# Last Update: May 4th, 2017
-# Contributor: An Zheng
 # ==============================================================================
 
 from __future__ import absolute_import

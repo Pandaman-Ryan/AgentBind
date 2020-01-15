@@ -1,16 +1,8 @@
 '''
     data_prep.py
-    
-    Last edit: July 2nd, 2018
 
     This program is used to generate training/validation/test data
     for DNN model training.
-
-    Input:
-        fimo.txt: all positions of a motif in the whole human genome
-        narrowPeak file: overlaps will be labelled as positives
-    Output:
-        Positives/Negtives:Training/Validation/Test
 '''
 
 import os

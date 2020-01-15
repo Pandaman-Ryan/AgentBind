@@ -2,7 +2,7 @@
 # and pre-processing
 # 
 # ==============================================================================
-"""Routine for reading DNase-seq data from datasets."""
+"""Steps for reading DNase-seq data from datasets."""
 
 from __future__ import absolute_import
 from __future__ import division
