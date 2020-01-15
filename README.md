@@ -3,9 +3,14 @@
 AgentBind is a machine-learning framework for analyzing the context regions of binding sites and identifying specific non-coding nucleotides with the strong effects on binding activities. This code repository contains code for the classification and visualization experiments for different TF binding sites using the DanQ and DeepSEA architectures.
 
 ## System Requirement & Installation ##
-All experiments are executed on CentOS Linux 7 (core) with Python 2.7. Prior to your code execution, you need to make sure you have downloaded
+All experiments are executed on CentOS Linux 7 (core) with Python 2.7. Prior to your code execution, you need to make sure you have downloaded:
 
-1. Fimo from Meme-suite
+1. Fimo from the MEME-suite
+
+You can download the MEME-suite from http://meme-suite.org/doc/download.html. This will give you a package of tools including Fimo. You also need to run the following command to ensure your Fimo can be executed directly.
+
+`export PATH=/home/pandaman/tools_and_dependencies/MEME-Suite/bin:$PATH`
+
 2. python libaries:
 You can install them with pip package manager:
 `pip install numpy six matplotlib biopython tensorflow-gpu`
