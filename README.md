@@ -5,7 +5,7 @@ AgentBind is a machine-learning framework for analyzing the context regions of b
 ## System Requirement & Installation ##
 All experiments are executed on CentOS Linux 7 (core) with Python 2.7. Prior to your code execution, you need to make sure you have downloaded:
 
-### Fimo from the MEME-suite ###
+* Fimo from the MEME-suite *
 
 You can download the MEME-suite from http://meme-suite.org/doc/download.html. This will give you a package of tools including Fimo. You also need to run the following command to ensure your Fimo can be executed directly.
 
