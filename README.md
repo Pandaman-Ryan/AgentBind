@@ -7,7 +7,7 @@ All experiments are executed on CentOS Linux 7 (core) with Python (v2.7.5). Prio
 
 **FIMO from the MEME-suite**
 
-You can download the MEME-suite from http://meme-suite.org/doc/download.html. This will give you a package of tools including FIMO. You also need to run the following command line:
+You can download the MEME-suite from http://meme-suite.org/doc/download.html. This will give you a package of tools including FIMO. You also need to run the following command line to set up a short-cut:
 
 `export PATH={YOUR-PATH}/MEME-Suite/bin:$PATH`
 
