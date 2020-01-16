@@ -20,9 +20,17 @@ Our code requires external python libraries including: tensorflow v1.9.0 GPU-ver
 **Data for experiments with the DanQ architecture**
 
 **Data for experiments with the DeepSEA architecture**
+https://drive.google.com/file/d/1UaaqgFlce9FSaBX2RoIz9pDaXacwQ3lW/view?usp=sharing
 
-## Demo ##
+## Run ##
+**AgentBind.py** is the python script that help you execute all experiments.
 
+*Required parameters:*
+
+`python AgentBind.py --motif {your-data-path}/table_matrix/table_core_motifs.txt 
+--workdir {your-work-path}
+--datadir {your-data-path}
+--resultdir {your-result-path}`
 
 The annotation scores produced with the DanQ architecture can be found here:
 * https://drive.google.com/file/d/1HB-_bG1K6rbbtBxh2OQ2ldL5BVp3NlBQ/view?usp=sharing
