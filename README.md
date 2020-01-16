@@ -27,10 +27,10 @@ https://drive.google.com/file/d/1UaaqgFlce9FSaBX2RoIz9pDaXacwQ3lW/view?usp=shari
 **AgentBind.py** is the python script which helps you execute all experiments.
 
 **Required parameters:**
-* --datadir: the directory where you stored the downloaded data
-* --motif: the names, motif-IDs, and ChIPseq files. They are included in the given data: `{your-data-path}/table_matrix/table_core_motifs.txt`
-* --workdir: the directory that stores all the intermediate/oversized files including the well-trained models and one-hot-encoded input sequences
-* --resultdir: the directory that stores all the results
+* --datadir: the directory where you stored the downloaded data.
+* --motif: the names, motif-IDs, and ChIPseq files. They are included in the given data: `{your-data-path}/table_matrix/table_core_motifs.txt`.
+* --workdir: the directory that stores all the intermediate/oversized files including the well-trained models, one-hot-encoded input sequences, and Grad-CAM annoation scores.
+* --resultdir: the directory that stores all the results.
 
 To run AgentBind, you can simply execute:
 ```
