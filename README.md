@@ -18,6 +18,7 @@ Our code requires external python libraries including: tensorflow v1.9.0 GPU-ver
 
 ## Data Download ##
 **Data for experiments with the DanQ architecture**
+https://drive.google.com/file/d/12mrLk9Ci7u2tKB8kuqldGXE9ghAzpbUk/view?usp=sharing
 
 **Data for experiments with the DeepSEA architecture**
 https://drive.google.com/file/d/1UaaqgFlce9FSaBX2RoIz9pDaXacwQ3lW/view?usp=sharing
