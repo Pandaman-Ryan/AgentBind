@@ -41,9 +41,9 @@ python AgentBind.py
 --resultdir {your-result-path}
 ```
 
-AgentBind reports the results of two situations, core motifs present (c) and blocked (b). You can find the correspounding classifications results (AUC curves) in: `{your-result-path}/{b or c}/{TF-name}+GM12878/`. And the annoation scores are saved at `{your-work-path}/ETS1+GM12878/seqs_one_hot_{b or c}/vis-weights-total/weight.txt`.
+AgentBind reports results of two situations, core motifs present (c) and blocked (b). You can find the correspounding classification results (AUC curves) in: `{your-result-path}/{b or c}/{TF-name}+GM12878/`. And the Grad-CAM annoation scores are available at `{your-work-path}/ETS1+GM12878/seqs_one_hot_{b or c}/vis-weights-total/weight.txt`.
 
-The python program takes ~24-48 hours to complete. If you only want the annotation scores, you can download them here directly (DanQ version only):
+The python program takes ~24-48 hours to complete. If you want the annotation scores only, you can directly download them here (DanQ version only):
 * https://drive.google.com/file/d/1HB-_bG1K6rbbtBxh2OQ2ldL5BVp3NlBQ/view?usp=sharing
 
 For questions on usage, please open an issue, submit a pull request, or contact An Zheng (anz023@eng.ucsd.edu).
