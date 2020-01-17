@@ -12,7 +12,7 @@ You can download the MEME-suite from http://meme-suite.org/doc/download.html. Th
 `export PATH={YOUR-PATH}/MEME-Suite/bin:$PATH`
 
 ### python libraries ###
-Our code requires external python libraries including tensorflow v1.9.0 GPU-version, biopython, numpy, and matplotlib. You can install them with the pip package manager:
+Our code requires external python libraries including tensorflow v1.9.0 GPU-version, biopython v1.71, numpy v1.15.4, six v1.14.0, scikit-image v0.14.5, and matplotlib. You can install them with the pip package manager:
 
 `pip install numpy==1.15.4 six matplotlib biopython scikit-image tensorflow-gpu`
 
