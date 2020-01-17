@@ -14,7 +14,7 @@ You can download the MEME-suite from http://meme-suite.org/doc/download.html. Th
 ### python libraries ###
 Our code requires external python libraries including tensorflow v1.9.0 GPU-version, biopython, numpy, and matplotlib. You can install them with the pip package manager:
 
-`pip install numpy six matplotlib biopython tensorflow-gpu`
+`pip install numpy==1.15.4 six matplotlib biopython scikit-image tensorflow-gpu`
 
 ## Data Download ##
 **Data for experiments with the DanQ architecture**
