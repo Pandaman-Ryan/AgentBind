@@ -3,7 +3,7 @@
 AgentBind is a machine-learning framework for analyzing context regions of binding sites and identifying specific non-coding nucleotides with strong effects on binding activities. This code repository contains code for the classification + visualization experiments with the DanQ and DeepSEA architectures respectively.
 
 ## System Requirement & Installation ##
-All experiments are executed on CentOS Linux 7 (core) with Python (v2.7.5). Prior to your code execution, you need to make sure you have downloaded:
+All experiments are executed on CentOS Linux 7 (core) with Python (v2.7.5). Prior to your code execution, please make sure you have completed the following instructions.
 
 **FIMO from the MEME-suite**
 
