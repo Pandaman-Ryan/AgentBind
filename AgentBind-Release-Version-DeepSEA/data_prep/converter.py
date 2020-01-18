@@ -30,9 +30,9 @@ class converter_template:
 
     def _download_genome(self, reference_dir):
         current_work_dir = os.getcwd()
-        os.chdir(reference_dir)
         ref_path = "%s/hg19.fa" %(reference_dir)
         if not os.path.isfile(ref_path):
+            os.chdir(reference_dir)
             cmd = 'wget ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.gz -O chromFa.tar.gz'
             subprocess.call(cmd, shell=True)
 
