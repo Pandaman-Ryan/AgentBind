@@ -48,4 +48,4 @@ AgentBind reports results of two situations, core motifs present (c) and blocked
 The python program "AgentBind.py" takes ~24-48 hours to complete. If you need the Grad-CAM annotation scores only, you can directly download them here (DanQ version only):
 * https://drive.google.com/file/d/1HB-_bG1K6rbbtBxh2OQ2ldL5BVp3NlBQ/view?usp=sharing
 
-For questions on usage, please open an issue, submit a pull request, or contact An Zheng (anz023@eng.ucsd.edu).
+For questions on usage, please open an issue, submit a pull request, or contact Melissa Gymrek (mgymrek@ucsd.edu) or An Zheng (anz023@eng.ucsd.edu).
