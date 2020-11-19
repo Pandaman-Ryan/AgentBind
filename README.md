@@ -1,5 +1,5 @@
 # AgentBind #
-https://zenodo.org/badge/174050946.svg
+<a href="https://zenodo.org/badge/latestdoi/174050946"><img src="https://zenodo.org/badge/174050946.svg" alt="DOI"></a>
 
 AgentBind is a machine-learning framework for analyzing context regions of binding sites and identifying specific non-coding nucleotides with strong effects on binding activities. This code repository contains code for the classification + visualization experiments with the DanQ and DeepSEA architectures respectively.
 
