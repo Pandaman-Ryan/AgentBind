@@ -7,7 +7,7 @@ Preprint: https://www.biorxiv.org/content/10.1101/2020.02.26.965343v1.full
 
 Published paper: rdcu.be/cdMmE
 
-Please cite:\\Zheng, A., Lamkin, M., Zhao, H. et al. Deep neural networks identify sequence context features predictive of transcription factor binding. Nat Mach Intell (2021).
+Please cite://Zheng, A., Lamkin, M., Zhao, H. et al. Deep neural networks identify sequence context features predictive of transcription factor binding. Nat Mach Intell (2021).
 
 ## System Requirement & Installation ##
 All experiments are executed on CentOS Linux 7 (core) with Python (v2.7.5). Prior to your code execution, please make sure you have installed the following tools/libraries.
