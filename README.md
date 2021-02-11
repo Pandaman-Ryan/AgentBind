@@ -3,9 +3,10 @@
 
 AgentBind is a machine-learning framework for analyzing context regions of binding sites and identifying specific non-coding nucleotides with strong effects on binding activities. This code repository contains code for the classification + visualization experiments with the DanQ and DeepSEA architectures respectively.
 
-Published paper: rdcu.be/cdMmE \
+Published paper: `rdcu.be/cdMmE`
+
 Please cite: \
-Zheng, A., Lamkin, M., Zhao, H. et al. Deep neural networks identify sequence context features predictive of transcription factor binding. Nat Mach Intell (2021).
+`Zheng, A., Lamkin, M., Zhao, H. et al. Deep neural networks identify sequence context features predictive of transcription factor binding. Nat Mach Intell (2021).`
 
 ## System Requirement & Installation ##
 All experiments are executed on CentOS Linux 7 (core) with Python (v2.7.5). Prior to your code execution, please make sure you have installed the following tools/libraries.
