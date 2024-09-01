@@ -24,10 +24,10 @@ Our code requires external python libraries including tensorflow v1.9.0 GPU-vers
 
 ## Data Download ##
 **Data for experiments with the DanQ architecture**
-https://drive.google.com/file/d/12mrLk9Ci7u2tKB8kuqldGXE9ghAzpbUk/view?usp=sharing
+https://drive.google.com/file/d/1dELokJ3D4TSHgGwHomSc5LDLDAwGtZiU/view?usp=sharing
 
 **Data for experiments with the DeepSEA architecture**
-https://drive.google.com/file/d/1UaaqgFlce9FSaBX2RoIz9pDaXacwQ3lW/view?usp=sharing
+https://drive.google.com/file/d/1zj56CnK6VqdJQeFY6JnsReqqEIv8YLgf/view?usp=sharing
 
 ## Run ##
 **AgentBind.py** is the go-to python script which execute all the experiments.
